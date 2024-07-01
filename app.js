@@ -1,7 +1,12 @@
 const express = require('express');
+const PORT = 8080;
 var app = express();
-app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => {
+    res.send('localhost is running!!')
+})
+app.get('/hello', (req, res) => {
     res.send('Hello Express')
 });
-app.listen(process.env.PORT || 3000);
+app.listen(PORT, () => {
+    console.log(`http://localhost:${PORT}`);
+});
