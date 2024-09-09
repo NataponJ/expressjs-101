@@ -8,5 +8,5 @@ app.get('/hello', (req, res) => {
     res.send('Hello Express')
 });
 app.listen(PORT, () => {
-    console.log(`http://localhost:${PORT}`);
+    console.log('Express.js Run on' ,`http://localhost:${PORT}`);
 });
