@@ -1,2 +1,2 @@
 run Express JS
-`node app.js`
+run dev `npm run dev`
